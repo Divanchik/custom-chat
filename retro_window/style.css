@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    line-height: 1.5em;
+}
+
+#log>div {
+    animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+    -webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+}
+
+.colon {
+    display: none;
+}
+
+#log {
+    display: flex;
+  flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#log>div.deleted {
+    visibility: hidden;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .emote img {
+    display: inline-block;
+    height: 1em;
+    opacity: 0;
+}
+
+#log .message,#log {
+    vertical-align: top;
+    display: table-cell;
+    padding-bottom: 0.1em;
+}
+
+
+#log .message {
+    word-wrap: break-word;
+}
+
+.badge {
+    display: inline-block;
+    margin-right: 0.2em;
+    position: relative;
+    height: 1em;
+    vertical-align: middle;
+    top: -0.1em;
+}
+
+#log>div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 4px solid black;
+  padding: 5px;
+  gap: 5px;
+  box-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black;
+}
+
+span.meta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 24px;
+  align-items: center;
+}
+
+span.message {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Press Start 2P', system-ui;
+  font-weight: normal;
+  font-size: 14px;
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+
+span.name {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 14px;
+  display: flex;
+  width: fit-content;
+  color: black;
+  align-items: center;
+  height: fit-content;
+}
+
+div.windows-icons {
+  display: flex;
+  width: 76px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+
+svg {
+  stroke: black;
+}
